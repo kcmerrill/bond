@@ -1,6 +1,10 @@
+[![Build Status](https://travis-ci.org/kcmerrill/bond.svg?branch=master)](https://travis-ci.org/kcmerrill/bond)
+
+![bond](bond.jpg)
+
 # Bond
 
-Bond your application output to external commands. Using regular expression matching, execute commands based on given matches. 
+Bond your application output to external commands. Using regular expression matching, execute commands based on given matches.
 
 A few use cases:
 * Metrics gathering
@@ -14,17 +18,13 @@ Create a `bond.yml` file with key value pairs. The keys are `regular expressions
 ```yaml
 "referrer: http://().baddomain.com$": echo -n "baddomain.com:60|c|:match" | nc -4u -w0 127.0.0.1 8125
 "^#id: (\d+): |
-    echo "Processing id: :match" 
+    echo "Processing id: :match"
     curl -XPOST http://crush.kcmerrill.com/id/:match
 ```
 
 ```shell
 $ tail -f myapplication.log | bond
 ```
-
-[![Build Status](https://travis-ci.org/kcmerrill/bond.svg?branch=master)](https://travis-ci.org/kcmerrill/bond)
-
-![bond](https://raw.githubusercontent.com/kcmerrill/bond.jpg)
 
 ## Binaries || Installation
 
