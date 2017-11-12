@@ -31,7 +31,7 @@ type actionConfig struct {
 func Execute(line string) bool {
 	executed := false
 	for _, act := range actions {
-		if matches := act.re.FindStringSubmatch(line); matches != nil {
+		if matches := act.re.FindStringSubmatch(line); matches != nil && len(matches) >= 2 {
 			cParsed := strings.Replace(act.cmd, ":match", matches[1], -1)
 			cmd := exec.Command("bash", "-c", cParsed)
 			cmd.Stdin = os.Stdin

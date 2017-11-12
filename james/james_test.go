@@ -58,6 +58,4 @@ func TestExecute(t *testing.T) {
 			t.Errorf("/tmp/warning.txt should have been created")
 		}
 	}
-
-	t.Errorf("...")
 }
