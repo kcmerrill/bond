@@ -13,7 +13,7 @@ A few use cases:
 
 # Quick Setup
 
-Create a `bond.yml` file with key value pairs. The keys are `regular expressions`, valus are `bash commands` to execute. `:match` is the string that matched, so you can pass it along to your script
+Create a `bond.yml` file with key value pairs. The keys are `regular expressions`, values are `bash commands` to execute. `:match` is the string that matched, so you can pass it along to your script
 
 ```yaml
 "referrer: http://().baddomain.com$": echo -n "baddomain.com:60|c|:match" | nc -4u -w0 127.0.0.1 8125
