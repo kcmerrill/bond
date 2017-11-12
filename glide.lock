@@ -1,0 +1,10 @@
+hash: 5ab8d6b5ca404f7a928529973b51c96504a87b87b98195a2b74a044263008e34
+updated: 2017-11-12T03:13:34.621196-07:00
+imports:
+- name: github.com/kcmerrill/common.go
+  version: 61ab5494b4ed9e8e797e2a3e672f6e51dfd1dbb1
+  subpackages:
+  - config
+- name: gopkg.in/yaml.v2
+  version: eb3733d160e74a9c7e442f435eb3bea458e1d19f
+testImports: []

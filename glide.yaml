@@ -1,0 +1,6 @@
+package: github.com/kcmerrill/bond
+import:
+- package: github.com/kcmerrill/common.go
+  subpackages:
+  - config
+- package: gopkg.in/yaml.v2

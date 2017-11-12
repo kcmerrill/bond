@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kcmerrill/util.go/config"
+	"github.com/kcmerrill/common.go/config"
 	yaml "gopkg.in/yaml.v2"
 )
 
